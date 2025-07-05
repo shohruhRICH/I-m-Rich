@@ -6,14 +6,38 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		848592972E14FF9F00F9B5E0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 848592962E14FF9F00F9B5E0 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		848592562E0EDC6900F9B5E0 /* Rick and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DA31802E18505200E9113B /* Rick and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		848592582E0EDC6900F9B5E0 /* Rick and Morty */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Rick and Morty";
+			sourceTree = "<group>";
+		};
+		848592642E0EDC7600F9B5E0 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		848592682E0EDE6800F9B5E0 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8485926E2E0EDF1A00F9B5E0 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8485927E2E0EFAE800F9B5E0 /* Netvorking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Netvorking;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848592972E14FF9F00F9B5E0 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,17 +57,13 @@
 		8485924D2E0EDC6900F9B5E0 = {
 			isa = PBXGroup;
 			children = (
+				8485927E2E0EFAE800F9B5E0 /* Netvorking */,
+				848592682E0EDE6800F9B5E0 /* ViewModels */,
 				848592582E0EDC6900F9B5E0 /* Rick and Morty */,
-				848592572E0EDC6900F9B5E0 /* Products */,
+				848592642E0EDC7600F9B5E0 /* Model */,
+				8485926E2E0EDF1A00F9B5E0 /* Views */,
+				84DA31802E18505200E9113B /* Rick and Morty.app */,
 			);
-			sourceTree = "<group>";
-		};
-		848592572E0EDC6900F9B5E0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				848592562E0EDC6900F9B5E0 /* Rick and Morty.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,12 +83,17 @@
 			);
 			fileSystemSynchronizedGroups = (
 				848592582E0EDC6900F9B5E0 /* Rick and Morty */,
+				848592642E0EDC7600F9B5E0 /* Model */,
+				848592682E0EDE6800F9B5E0 /* ViewModels */,
+				8485926E2E0EDF1A00F9B5E0 /* Views */,
+				8485927E2E0EFAE800F9B5E0 /* Netvorking */,
 			);
 			name = "Rick and Morty";
 			packageProductDependencies = (
+				848592962E14FF9F00F9B5E0 /* Kingfisher */,
 			);
 			productName = "Rick and Morty";
-			productReference = 848592562E0EDC6900F9B5E0 /* Rick and Morty.app */;
+			productReference = 84DA31802E18505200E9113B /* Rick and Morty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,8 +120,11 @@
 			);
 			mainGroup = 8485924D2E0EDC6900F9B5E0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				848592952E14FF9F00F9B5E0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 848592572E0EDC6900F9B5E0 /* Products */;
+			productRefGroup = 8485924D2E0EDC6900F9B5E0;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -258,6 +287,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		848592952E14FF9F00F9B5E0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		848592962E14FF9F00F9B5E0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 848592952E14FF9F00F9B5E0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8485924E2E0EDC6900F9B5E0 /* Project object */;
 }
